@@ -14,4 +14,16 @@ def test_student_cohort()
   assert_equal("E28", student.cohort)
 end
 
+def test_set_student_name()
+  student = Student.new("Bob", "E28")
+  student.name = ("Alice")
+  assert_equal("Alice", student.name)
+end
+
+def test_set_student_student()
+  student = Student.new("Bob", "E28")
+  student.cohort = ("E29")
+  assert_equal("E29", student.cohort)
+end
+
 end
