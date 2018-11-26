@@ -9,6 +9,9 @@ class CodeClanStudent < MiniTest::Test
     assert_equal("Bob", student.name)
   end
 
-
+def test_student_cohort()
+  student = Student.new("Bob", "E28")
+  assert_equal("E28", student.cohort)
+end
 
 end
