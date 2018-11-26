@@ -1,12 +1,13 @@
 class Team
 
-  attr_accessor :name, :players, :coach, :result
+  attr_accessor :name, :players, :coach, :result, :points
 
-  def initialize(name, players, coach, result)
+  def initialize(name, players, coach, result, points)
     @name = name
     @players = players
     @coach = coach
     @result = result
+    @points = points
   end
 
   def add_player(player_name)
@@ -18,10 +19,12 @@ class Team
   end
 
   def score(result)
+    win = 3
+    lose = 0
     if result == "win"
-      return result
+      result.push(result)
     elsif result == "lose"
-      return result
+      result.push(result)
     end
   end
 end
