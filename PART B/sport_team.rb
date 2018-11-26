@@ -18,8 +18,11 @@ class Team
   end
 
   def update_points(result)
-    points_added = {"win" => 3}
-    @points += points_added[result]
+    points_change = {
+      "win" => 3,
+      "lose" => 0
+    }
+    @points += points_change[result]
   end
 
 end
