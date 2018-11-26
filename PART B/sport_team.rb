@@ -17,4 +17,8 @@ class Team
     players.include?(player_name)
   end
 
+def update_points(result)
+
+end
+
 end
