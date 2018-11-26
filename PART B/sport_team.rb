@@ -17,4 +17,9 @@ def check_for_player(player_name)
   players.include?(player_name)
 end
 
+def team__score
+if 
+end
+end
+
 end
